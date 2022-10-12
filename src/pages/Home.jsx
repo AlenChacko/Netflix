@@ -10,7 +10,6 @@ function Home() {
       <Row rowID = '1' title='Now Playing' fetchURL={requests.requestNowPlaying} />
       <Row rowID = '2' title='Up Coming' fetchURL={requests.requestUpcoming} />
       <Row rowID = '3' title='Top Rated' fetchURL={requests.requestTopRated} />
-      <Row rowID = '3' title='TV Shows' fetchURL={requests.requestTv} />
 
       
     
