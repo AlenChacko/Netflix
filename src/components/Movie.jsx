@@ -3,6 +3,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { UserAuth } from "../context/AuthContext";
 import { db } from "../firebase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
 import { async } from "@firebase/util";
 export const Movie = ({ item }) => {
   const [like, setLike] = useState(false);
@@ -21,7 +22,13 @@ export const Movie = ({ item }) => {
         }),
       });
     } else {
-      alert("Please Login to save a movie");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You need to Login!',
+        
+      })
+      
     }
   };
   return (
