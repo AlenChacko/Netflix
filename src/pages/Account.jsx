@@ -1,5 +1,5 @@
-import React from 'react'
-import SavedShows from '../components/SavedShows'
+import React from "react";
+import SavedShows from "../components/SavedShows";
 
 const Account = () => {
   return (
@@ -18,7 +18,7 @@ const Account = () => {
       </div>
       <SavedShows />
     </>
-  )
-}
+  );
+};
 
-export default Account
+export default Account;
